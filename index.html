@@ -1,612 +1,102 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p2 {margin: 0.0px 0.0px 10.8px 0.0px; font: 10.8px 'Helvetica Neue'; color: #878787; -webkit-text-stroke: #878787}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626; background-color: #c9f1ec}
-    p.p6 {margin: 0.0px 0.0px 6.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #6d6d6d; -webkit-text-stroke: #6d6d6d; min-height: 15.0px}
-    p.p11 {margin: 0.0px 0.0px 5.4px 0.0px; text-align: center; font: 10.8px 'Helvetica Neue'; color: #878787; -webkit-text-stroke: #878787}
-    li.li6 {margin: 0.0px 0.0px 6.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626}
-    li.li9 {margin: 0.0px 0.0px 6.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #000000; color: rgba(0, 0, 0, 0.54); -webkit-text-stroke: rgba(0, 0, 0, 0.54)}
-    span.s1 {font-kerning: none}
-    span.s2 {-webkit-text-stroke: 0px #000000}
-    span.s3 {font: 12.0px 'Helvetica Neue'; font-kerning: none; color: #40a89e; -webkit-text-stroke: 0px #40a89e}
-    span.s4 {font: 12.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: 0px #000000}
-    span.s5 {font: 12.0px 'Helvetica Neue'; font-kerning: none; color: #262626; -webkit-text-stroke: 0px #262626}
-    span.s6 {font: 13.0px 'Helvetica Neue'; text-decoration: underline ; font-kerning: none; color: rgba(0, 0, 0, 0.54); -webkit-text-stroke: 0px rgba(0, 0, 0, 0.54)}
-    table.t1 {margin: 12.0px 0.0px 12.0px 0.0px; border-collapse: collapse}
-    td.td1 {width: 240.2px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td2 {width: 260.9px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td3 {width: 215.0px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td4 {width: 240.2px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td5 {width: 260.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td6 {width: 215.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td7 {width: 277.3px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td8 {width: 258.2px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td9 {width: 180.5px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td10 {width: 277.3px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td11 {width: 258.2px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td12 {width: 180.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td13 {width: 250.6px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td14 {width: 274.3px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td15 {width: 191.1px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td16 {width: 250.6px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td17 {width: 274.3px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td18 {width: 191.1px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td19 {width: 135.8px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td20 {width: 237.3px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td21 {width: 342.9px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td22 {width: 135.8px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td23 {width: 237.3px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td24 {width: 342.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td25 {width: 173.2px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td26 {width: 175.0px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td27 {width: 127.1px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td28 {width: 223.8px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td29 {width: 173.2px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td30 {width: 175.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td31 {width: 127.1px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td32 {width: 223.8px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td33 {width: 184.8px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td34 {width: 275.5px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td35 {width: 255.7px; background-color: #c9f1ec; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td36 {width: 184.8px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td37 {width: 275.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    td.td38 {width: 255.7px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #d5d5d5 #d5d5d5 #d5d5d5 #d5d5d5; padding: 8.0px 8.0px 8.0px 8.0px}
-    ul.ul1 {list-style-type: disc}
-  </style>
-</head>
-<body>
-<h1 style="margin: 0.0px 0.0px 14.5px 0.0px; font: 21.6px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>Privacy Policy</b></span></h1>
-<p class="p2"><span class="s1">Effective Date: October 17, 2025<br>
-Last Updated: October 17, 2025</span></p>
-<p class="p3"><span class="s1"><b>Core Principle:</b> MoodMirror performs emotion detection locally on your device using ML Kit. Photos are processed in memory and not uploaded to external servers unless you choose to share generated cards through system sharing functions.</span></p>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>1. Information We Collect</b></span></h2>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>1.1 Device and Identifiers</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Advertising Identifiers:</b> Google Advertising ID (GAID) collected by integrated ad SDKs for ad serving and frequency capping.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Device Information:</b> Device model, OS version, screen size, language settings collected for app functionality and analytics.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>App-specific Identifiers:</b> Anonymous installation ID generated by Firebase Analytics for usage tracking.</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>1.2 Runtime Permissions</b></span></h3>
-<p class="p6"><span class="s1">The app requests the following permissions:</span></p>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p7"><span class="s1"><b>Permission</b></span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p7"><span class="s1"><b>Purpose</b></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p7"><span class="s1"><b>Data Processing</b></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td4">
-        <p class="p7"><span class="s1">Camera</span></p>
-      </td>
-      <td valign="middle" class="td5">
-        <p class="p7"><span class="s1">Capture photos for emotion detection</span></p>
-      </td>
-      <td valign="middle" class="td6">
-        <p class="p7"><span class="s1">Local processing only; not uploaded</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td4">
-        <p class="p7"><span class="s1">Read/Write External Storage (Android 12 and below)</span></p>
-      </td>
-      <td valign="middle" class="td5">
-        <p class="p7"><span class="s1">Save generated share cards to device storage</span></p>
-      </td>
-      <td valign="middle" class="td6">
-        <p class="p7"><span class="s1">Files saved locally; user-controlled</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td4">
-        <p class="p7"><span class="s1">Internet</span></p>
-      </td>
-      <td valign="middle" class="td5">
-        <p class="p7"><span class="s1">Serve ads, send analytics events, download ad creatives</span></p>
-      </td>
-      <td valign="middle" class="td6">
-        <p class="p7"><span class="s1">Network requests to ad networks and Firebase</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td4">
-        <p class="p7"><span class="s1">Access Network State</span></p>
-      </td>
-      <td valign="middle" class="td5">
-        <p class="p7"><span class="s1">Check network availability for ad loading</span></p>
-      </td>
-      <td valign="middle" class="td6">
-        <p class="p7"><span class="s1">Local status check only</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>1.3 Data Categories and Usage</b></span></h3>
-<p class="p6"><span class="s1"><b>Data Collected:</b><b></b></span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Photos:</b> Captured via camera or selected from gallery. Processed locally by ML Kit for facial expression analysis. Not stored permanently or uploaded unless user shares generated card.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Usage Data:</b> App events (e.g., photo_captured, emotion_analyzed, card_shared) sent to Firebase Analytics for usage statistics.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Diagnostic Data:</b> Crash reports and performance metrics sent to Firebase Crashlytics and Performance Monitoring.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Ad Interaction Data:</b> Ad impressions, clicks, rewards collected by ad SDKs (TopOn, AdMob, Meta, Unity, Pangle) for ad delivery optimization.</span></li>
-</ul>
-<p class="p6"><span class="s1"><b>Data Usage:</b><b></b></span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>App Functionality:</b> Emotion detection, card generation, camera preview.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Ad Serving:</b> Deliver personalized or non-personalized ads based on user consent. Frequency capping to limit ad repetition.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Analytics:</b> Understand user behavior, improve app features, measure engagement (anonymous aggregated data).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Crash and Performance Monitoring:</b> Identify bugs, improve app stability.</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>2. Data Processing Location and Association</b></span></h2>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>2.1 Local Processing</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Emotion Detection:</b> Performed entirely on-device using Google ML Kit. Face detection and expression analysis happen in memory; raw photos are not retained or uploaded.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Card Generation:</b> Generated locally and saved to device storage only if user initiates share action.</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>2.2 Data Uploaded to Third Parties</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Firebase (Google LLC):</b> Anonymous analytics events, crash reports, performance metrics. Not linked to personal identity unless user signs in (authentication not implemented in v1.0).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Ad Networks:</b> Advertising ID, device info, ad interaction data sent to TopOn, AdMob, Meta Audience Network, Unity Ads, Pangle for ad serving and attribution.</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>2.3 Cross-App Tracking</b></span></h3>
-<p class="p6"><span class="s1">Ad SDKs may use Advertising ID for cross-app tracking to deliver personalized ads. Users can:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Android:</b> Disable ad personalization in Settings → Google → Ads → Opt out of Ads Personalization.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Reset Advertising ID:</b> Settings → Google → Ads → Reset advertising ID.</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>3. Third-Party SDKs</b></span></h2>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>3.1 Ad SDKs</b></span></h3>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td7">
-        <p class="p7"><span class="s1"><b>SDK</b></span></p>
-      </td>
-      <td valign="middle" class="td8">
-        <p class="p7"><span class="s1"><b>Purpose</b></span></p>
-      </td>
-      <td valign="middle" class="td9">
-        <p class="p7"><span class="s1"><b>Privacy Policy</b></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td10">
-        <p class="p7"><span class="s1">TopOn (Thinkup)</span></p>
-      </td>
-      <td valign="middle" class="td11">
-        <p class="p7"><span class="s1">Ad mediation platform</span></p>
-      </td>
-      <td valign="middle" class="td12">
-        <p class="p8"><span class="s1"><a href="https://www.toponad.com/en/privacy-policy">TopOn Privacy<span class="s3"></span></a></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td10">
-        <p class="p7"><span class="s1">Google AdMob</span></p>
-      </td>
-      <td valign="middle" class="td11">
-        <p class="p7"><span class="s1">Ad serving</span></p>
-      </td>
-      <td valign="middle" class="td12">
-        <p class="p8"><span class="s1"><a href="https://policies.google.com/privacy">Google Privacy<span class="s3"></span></a></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td10">
-        <p class="p7"><span class="s1">Meta Audience Network</span></p>
-      </td>
-      <td valign="middle" class="td11">
-        <p class="p7"><span class="s1">Ad serving</span></p>
-      </td>
-      <td valign="middle" class="td12">
-        <p class="p8"><span class="s1"><a href="https://www.facebook.com/privacy/policy">Meta Privacy<span class="s3"></span></a></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td10">
-        <p class="p7"><span class="s1">Unity Ads</span></p>
-      </td>
-      <td valign="middle" class="td11">
-        <p class="p7"><span class="s1">Ad serving</span></p>
-      </td>
-      <td valign="middle" class="td12">
-        <p class="p8"><span class="s1"><a href="https://unity.com/legal/privacy-policy">Unity Privacy<span class="s3"></span></a></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td10">
-        <p class="p7"><span class="s1">Pangle (ByteDance)</span></p>
-      </td>
-      <td valign="middle" class="td11">
-        <p class="p7"><span class="s1">Ad serving</span></p>
-      </td>
-      <td valign="middle" class="td12">
-        <p class="p8"><span class="s1"><a href="https://www.pangleglobal.com/privacy">Pangle Privacy<span class="s3"></span></a></span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>3.2 Analytics and Performance SDKs</b></span></h3>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td13">
-        <p class="p7"><span class="s1"><b>SDK</b></span></p>
-      </td>
-      <td valign="middle" class="td14">
-        <p class="p7"><span class="s1"><b>Purpose</b></span></p>
-      </td>
-      <td valign="middle" class="td15">
-        <p class="p7"><span class="s1"><b>Privacy Policy</b></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td16">
-        <p class="p7"><span class="s1">Firebase Analytics</span></p>
-      </td>
-      <td valign="middle" class="td17">
-        <p class="p7"><span class="s1">Usage tracking</span></p>
-      </td>
-      <td valign="middle" class="td18">
-        <p class="p8"><span class="s1"><a href="https://firebase.google.com/support/privacy">Firebase Privacy<span class="s3"></span></a></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td16">
-        <p class="p7"><span class="s1">Firebase Crashlytics</span></p>
-      </td>
-      <td valign="middle" class="td17">
-        <p class="p7"><span class="s1">Crash reporting</span></p>
-      </td>
-      <td valign="middle" class="td18">
-        <p class="p8"><span class="s1"><a href="https://firebase.google.com/support/privacy">Firebase Privacy<span class="s3"></span></a></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td16">
-        <p class="p7"><span class="s1">Firebase Performance</span></p>
-      </td>
-      <td valign="middle" class="td17">
-        <p class="p7"><span class="s1">Performance monitoring</span></p>
-      </td>
-      <td valign="middle" class="td18">
-        <p class="p8"><span class="s1"><a href="https://firebase.google.com/support/privacy">Firebase Privacy<span class="s3"></span></a></span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>3.3 Functional SDKs</b></span></h3>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td19">
-        <p class="p7"><span class="s1"><b>SDK</b></span></p>
-      </td>
-      <td valign="middle" class="td20">
-        <p class="p7"><span class="s1"><b>Purpose</b></span></p>
-      </td>
-      <td valign="middle" class="td21">
-        <p class="p7"><span class="s1"><b>Data Collected</b></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td22">
-        <p class="p7"><span class="s1">Google ML Kit</span></p>
-      </td>
-      <td valign="middle" class="td23">
-        <p class="p7"><span class="s1">On-device face detection</span></p>
-      </td>
-      <td valign="middle" class="td24">
-        <p class="p7"><span class="s1">Processed locally; not sent to Google</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td22">
-        <p class="p7"><span class="s1">CameraX</span></p>
-      </td>
-      <td valign="middle" class="td23">
-        <p class="p7"><span class="s1">Camera functionality</span></p>
-      </td>
-      <td valign="middle" class="td24">
-        <p class="p7"><span class="s1">Local only</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>4. User Consent and Control</b></span></h2>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>4.1 GDPR Compliance (EU/EEA/UK Users)</b></span></h3>
-<p class="p6"><span class="s1">For users in the European Economic Area (EEA) and United Kingdom:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Consent Dialog:</b> On first launch, a consent dialog powered by Google UMP (User Messaging Platform) is displayed.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Choices:</b> Accept personalized ads, manage options, or decline personalized ads (non-personalized ads may still be shown).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Withdraw Consent:</b> Clear app data or contact us to reset consent preferences.</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>4.2 Personalized vs. Non-Personalized Ads</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Personalized Ads:</b> Use Advertising ID and behavioral data for targeted ads (higher relevance, higher revenue).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Non-Personalized Ads:</b> Generic ads not based on user behavior (lower relevance).</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>4.3 Opt-Out Options</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">Android Settings → Google → Ads → Opt out of Ads Personalization</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Android Settings → Google → Ads → Reset advertising ID</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">App Settings → Clear Data (resets consent)</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>5. Data Sharing</b></span></h2>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>5.1 With Whom We Share Data</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Ad Networks:</b> TopOn, AdMob, Meta, Unity, Pangle receive device info and ad interaction data.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Analytics Providers:</b> Firebase (Google) receives anonymous usage and diagnostic data.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>No Sale of Personal Data:</b> We do not sell user data to third parties.</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>5.2 Data Retention</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Local Data:</b> Generated share cards stored on device until user deletes them or uninstalls the app.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Firebase Analytics:</b> Retained for 60 days (configurable by Firebase project settings).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Crashlytics:</b> Retained for 90 days.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Ad SDK Data:</b> Retention policies vary by ad network; refer to their respective privacy policies.</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>5.3 Data Security</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Encryption:</b> Network transmission uses HTTPS/TLS.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Access Control:</b> App-scoped storage (Android 10+); files not accessible by other apps.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>No Cloud Storage:</b> No user data stored on our servers; all processing is local or handled by third-party SDKs per their policies.</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>6. Regional Compliance and User Rights</b></span></h2>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>6.1 GDPR (EU/EEA/UK)</b></span></h3>
-<p class="p6"><span class="s1">Users in the EU/EEA/UK have the following rights:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Access:</b> Request a copy of your data (limited to analytics events; contact us).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Rectification:</b> Request correction of inaccurate data.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Erasure:</b> Request deletion of your data (uninstall app or contact us).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Restriction:</b> Request limiting data processing.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Portability:</b> Request data export (if applicable).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Object:</b> Object to data processing for direct marketing.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Withdraw Consent:</b> Withdraw GDPR consent at any time (clear app data or contact us).</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>6.2 CCPA/CPRA (California, USA)</b></span></h3>
-<p class="p6"><span class="s1">California residents have the following rights:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Know:</b> Request disclosure of data collected and shared.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Delete:</b> Request deletion of personal information.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Opt-Out:</b> Opt out of sale of personal information (we do not sell data).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Non-Discrimination:</b> Exercise rights without penalty.</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 13.2px 0.0px; font: 13.2px 'Helvetica Neue'; color: #40a89e; -webkit-text-stroke: #40a89e"><span class="s1"><b>6.3 Other Jurisdictions</b></span></h3>
-<p class="p6"><span class="s1">We comply with applicable data protection laws in all regions where the app is available.</span></p>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>7. Children's Privacy</b></span></h2>
-<p class="p6"><span class="s1">MoodMirror is designed for general audiences aged 13+. We do not knowingly collect personal information from children under 13 without parental consent. If we become aware of such collection, we will delete the data promptly.</span></p>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>8. Data Processing Summary</b></span></h2>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td25">
-        <p class="p7"><span class="s1"><b>Data Type</b></span></p>
-      </td>
-      <td valign="middle" class="td26">
-        <p class="p7"><span class="s1"><b>Processing Location</b></span></p>
-      </td>
-      <td valign="middle" class="td27">
-        <p class="p7"><span class="s1"><b>Linked to Identity</b></span></p>
-      </td>
-      <td valign="middle" class="td28">
-        <p class="p7"><span class="s1"><b>Cross-App Tracking</b></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td29">
-        <p class="p7"><span class="s1">Photos (camera/gallery)</span></p>
-      </td>
-      <td valign="middle" class="td30">
-        <p class="p7"><span class="s1">Local device only</span></p>
-      </td>
-      <td valign="middle" class="td31">
-        <p class="p7"><span class="s1">No</span></p>
-      </td>
-      <td valign="middle" class="td32">
-        <p class="p7"><span class="s1">No</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td29">
-        <p class="p7"><span class="s1">Emotion detection results</span></p>
-      </td>
-      <td valign="middle" class="td30">
-        <p class="p7"><span class="s1">Local device only</span></p>
-      </td>
-      <td valign="middle" class="td31">
-        <p class="p7"><span class="s1">No</span></p>
-      </td>
-      <td valign="middle" class="td32">
-        <p class="p7"><span class="s1">No</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td29">
-        <p class="p7"><span class="s1">Analytics events</span></p>
-      </td>
-      <td valign="middle" class="td30">
-        <p class="p7"><span class="s1">Firebase servers (Google)</span></p>
-      </td>
-      <td valign="middle" class="td31">
-        <p class="p7"><span class="s1">No (anonymous)</span></p>
-      </td>
-      <td valign="middle" class="td32">
-        <p class="p7"><span class="s1">No</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td29">
-        <p class="p7"><span class="s1">Crash reports</span></p>
-      </td>
-      <td valign="middle" class="td30">
-        <p class="p7"><span class="s1">Firebase servers (Google)</span></p>
-      </td>
-      <td valign="middle" class="td31">
-        <p class="p7"><span class="s1">No</span></p>
-      </td>
-      <td valign="middle" class="td32">
-        <p class="p7"><span class="s1">No</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td29">
-        <p class="p7"><span class="s1">Ad interactions</span></p>
-      </td>
-      <td valign="middle" class="td30">
-        <p class="p7"><span class="s1">Ad network servers</span></p>
-      </td>
-      <td valign="middle" class="td31">
-        <p class="p7"><span class="s1">Via Advertising ID</span></p>
-      </td>
-      <td valign="middle" class="td32">
-        <p class="p7"><span class="s1">Yes (if personalized ads enabled)</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td29">
-        <p class="p7"><span class="s1">Advertising ID</span></p>
-      </td>
-      <td valign="middle" class="td30">
-        <p class="p7"><span class="s1">Ad network servers</span></p>
-      </td>
-      <td valign="middle" class="td31">
-        <p class="p7"><span class="s1">Pseudonymous</span></p>
-      </td>
-      <td valign="middle" class="td32">
-        <p class="p7"><span class="s1">Yes (user can opt out)</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>9. Changes to This Privacy Policy</b></span></h2>
-<p class="p6"><span class="s1">We may update this privacy policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. Continued use of the app after changes constitutes acceptance of the updated policy.</span></p>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>10. Contact Us</b></span></h2>
-<p class="p6"><span class="s1">If you have questions or requests regarding this privacy policy, please contact us:</span></p>
-<ul class="ul1">
-  <li class="li9"><span class="s4"><b></b></span><span class="s5"><b>Email:</b> <a href="mailto:caritavalo9@gmail.com"><span class="s6">caritavalo9@gmail.com</span></a></span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>App Name:</b> MoodMirror</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Package Name:</b> com.qiqiba.moodmirror</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>11. Legal Basis for Processing (GDPR)</b></span></h2>
-<p class="p6"><span class="s1">Our legal basis for processing personal data:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Consent:</b> For personalized advertising (user can withdraw via settings).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Legitimate Interest:</b> For app functionality, analytics, crash reporting (balancing our interest with user privacy).</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Contractual Necessity:</b> To provide core app features requested by user.</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>12. Data Retention Details</b></span></h2>
-<p class="p6"><span class="s1"><b>Note:</b> Retention periods marked as "default" are set by third-party services (Firebase, ad networks) and are not controlled by our app. These are their standard data retention policies.</span></p>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td33">
-        <p class="p7"><span class="s1"><b>Data Type</b></span></p>
-      </td>
-      <td valign="middle" class="td34">
-        <p class="p7"><span class="s1"><b>Retention Period</b></span></p>
-      </td>
-      <td valign="middle" class="td35">
-        <p class="p7"><span class="s1"><b>Deletion Method</b></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td36">
-        <p class="p7"><span class="s1">Generated share cards</span></p>
-      </td>
-      <td valign="middle" class="td37">
-        <p class="p7"><span class="s1">Until user deletes file or uninstalls app</span></p>
-      </td>
-      <td valign="middle" class="td38">
-        <p class="p7"><span class="s1">Manual file deletion or app uninstall</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td36">
-        <p class="p7"><span class="s1">Firebase Analytics events</span></p>
-      </td>
-      <td valign="middle" class="td37">
-        <p class="p7"><span class="s1">60 days (Firebase default)</span></p>
-      </td>
-      <td valign="middle" class="td38">
-        <p class="p7"><span class="s1">Automatic expiration by Firebase</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td36">
-        <p class="p7"><span class="s1">Crashlytics reports</span></p>
-      </td>
-      <td valign="middle" class="td37">
-        <p class="p7"><span class="s1">90 days (Firebase default)</span></p>
-      </td>
-      <td valign="middle" class="td38">
-        <p class="p7"><span class="s1">Automatic expiration by Firebase</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td36">
-        <p class="p7"><span class="s1">Ad SDK data</span></p>
-      </td>
-      <td valign="middle" class="td37">
-        <p class="p7"><span class="s1">Varies by network (see their policies)</span></p>
-      </td>
-      <td valign="middle" class="td38">
-        <p class="p7"><span class="s1">Per ad network retention policy</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td36">
-        <p class="p7"><span class="s1">GDPR consent record</span></p>
-      </td>
-      <td valign="middle" class="td37">
-        <p class="p7"><span class="s1">12 months or until user resets consent</span></p>
-      </td>
-      <td valign="middle" class="td38">
-        <p class="p7"><span class="s1">Clear app data or contact us</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>13. Third-Party Links</b></span></h2>
-<p class="p6"><span class="s1">The app may contain links to third-party websites (e.g., ad landing pages). We are not responsible for the privacy practices of external sites. Users should review the privacy policies of any third-party sites they visit.</span></p>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>14. Security Measures</b></span></h2>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Encryption in Transit:</b> All network communications use HTTPS/TLS.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>App Sandbox:</b> Data stored in app-private directory (Android 10+), not accessible to other apps.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Minimal Permissions:</b> Only request permissions necessary for app functionality.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Secure Coding Practices:</b> Input validation, secure random generation for signing keys.</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>15. International Data Transfers</b></span></h2>
-<p class="p6"><span class="s1">Data processed by Firebase and ad SDKs may be transferred to and stored on servers located in the United States and other countries. These transfers are subject to:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">EU-US Data Privacy Framework (for Firebase/Google services)</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Standard Contractual Clauses (SCCs) where applicable</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Adequate safeguards per GDPR Article 46</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 13.9px 0.0px; font: 16.8px 'Helvetica Neue'; color: #256865; -webkit-text-stroke: #256865"><span class="s1"><b>16. Compliance Certifications</b></span></h2>
-<p class="p6"><span class="s1">This privacy policy is designed to comply with:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">GDPR (General Data Protection Regulation, EU/EEA/UK)</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">CCPA/CPRA (California Consumer Privacy Act)</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Google Play Developer Program Policies</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">IAB Transparency and Consent Framework (TCF) v2.2</span></li>
-</ul>
-<p class="p10"><span class="s1"></span><br></p>
-<p class="p11"><span class="s1">© 2025 QiQiBa. MoodMirror - AI Emotion Mirror.</span></p>
-</body>
-</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ColorMind – Privacy Policy</title>
+    <style>
+      :root { --fg:#111; --muted:#555; --bg:#fff; --brand:#4b7bec; }
+      html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+      header{padding:20px 16px;border-bottom:1px solid #eee}
+      header h1{margin:0;font-size:20px}
+      main{max-width:880px;margin:0 auto;padding:20px 16px}
+      h2{margin-top:28px;font-size:18px}
+      h3{margin-top:20px;font-size:16px}
+      p,li{color:var(--fg)}
+      ul{padding-left:20px}
+      .muted{color:var(--muted)}
+      a{color:var(--brand);text-decoration:none}
+      a:hover{text-decoration:underline}
+      footer{margin-top:40px;padding:16px;border-top:1px solid #eee;color:var(--muted)}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ColorMind – Privacy Policy</h1>
+      <p class="muted">Effective date: 20 Oct 2025</p>
+    </header>
+    <main>
+      <p>ColorMind is a single‑device utility that helps users explore mood and personality through intuitive color selection. By default, the app processes test logic on the device. Network access is used only for advertising, Google services, and remote configuration where applicable. If any future cloud feature is introduced, the app will clearly notify you and ask for consent before enabling it.</p>
+
+      <h2>1. Device Identifiers</h2>
+      <ul>
+        <li>Advertising identifiers (e.g., GAID on Android) for ad delivery, frequency capping, fraud prevention, and reporting via our ad partners.</li>
+        <li>In‑app anonymous identifiers (if generated by SDKs) used for analytics aggregation and diagnostics without direct identification.</li>
+      </ul>
+
+      <h2>2. Runtime Permissions</h2>
+      <p>ColorMind requests only permissions required for core functions:</p>
+      <ul>
+        <li><strong>Photos/Media/Files (MediaStore)</strong>: save the result image you explicitly request to export.</li>
+        <li><strong>Network access</strong>: load and show ads; communicate with Google services (Analytics/Crash reporting/Remote Config).</li>
+        <li><strong>Notifications</strong>: not used by default. If added, it will be optional and clearly explained before use.</li>
+        <li><strong>Camera / Clipboard / Location / Nearby devices</strong>: not used by this app.</li>
+      </ul>
+
+      <h2>3. Data Categories and Purposes</h2>
+      <ul>
+        <li><strong>Device &amp; usage data</strong>: coarse device info, app version, and anonymous event data for stability and performance.</li>
+        <li><strong>Diagnostics</strong>: crash logs and performance metrics to maintain reliability.</li>
+        <li><strong>Advertising interaction data</strong>: ad requests, impressions, clicks, frequency capping, and fraud prevention.</li>
+      </ul>
+      <p>Purposes: ad delivery &amp; measurement, anonymous analytics, app functionality (saving an image to local storage).</p>
+
+      <h2>4. Processing Location &amp; Association</h2>
+      <ul>
+        <li><strong>Local processing</strong>: color test logic and result generation occur on your device.</li>
+        <li><strong>Upload</strong>: crash/performance and analytics events may be sent to Google services; ad requests are sent to ad partners. No test answers or images are uploaded by the app.</li>
+        <li><strong>Association</strong>: we do not combine data with directly identifiable information. Ad partners may use identifiers to provide personalized or non‑personalized ads subject to consent.</li>
+        <li><strong>Cross‑app tracking</strong>: only through ad/analytics SDKs according to your consent settings and platform controls.</li>
+      </ul>
+
+      <h2>5. Third‑party SDKs</h2>
+      <ul>
+        <li>TopOn (ad mediation) – <a href="https://help.toponad.net/" target="_blank" rel="noopener">Policy</a></li>
+        <li>Google Mobile Ads / AdMob – <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Policy</a></li>
+        <li>Facebook Audience Network – <a href="https://www.facebook.com/policies/ads/" target="_blank" rel="noopener">Policy</a></li>
+        <li>Unity Ads – <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Policy</a></li>
+        <li>Pangle – <a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">Policy</a></li>
+        <li>Google Firebase (Analytics/Crashlytics/Performance/Remote Config) – <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Policy</a></li>
+      </ul>
+
+      <h2>6. Consent &amp; User Controls</h2>
+      <ul>
+        <li><strong>GDPR / UMP</strong>: for users in the EEA/UK, the app shows a User Messaging Platform (UMP) consent dialog, allowing you to choose personalized or non‑personalized ads and to manage or withdraw consent later.</li>
+        <li><strong>Android settings</strong>: you can reset the advertising ID, limit ad personalization, or clear app data to reset local identifiers.</li>
+        <li><strong>iOS ATT</strong>: if an iOS version is published, the app will request App Tracking Transparency consent where required.</li>
+      </ul>
+
+      <h2>7. Sharing, Retention &amp; Security</h2>
+      <ul>
+        <li><strong>Sharing</strong>: data is shared with the SDK providers above solely for delivery of ads, analytics, diagnostics, and related compliance needs.</li>
+        <li><strong>Retention</strong>: kept only as long as necessary for the stated purposes and according to partner policies.</li>
+        <li><strong>Security</strong>: data transmitted over HTTPS; the app follows sandboxing, least‑privilege permissions, and secure storage practices.</li>
+      </ul>
+
+      <h2>8. Regional Rights</h2>
+      <p>We honor applicable privacy laws such as GDPR and CCPA/CPRA. Depending on your region, you may have rights to access, deletion, correction, portability, objection, and restriction. You can exercise these through in‑app consent dialogs, platform settings, or by contacting us.</p>
+
+      <h2>9. Contact</h2>
+      <p>Email: <a href="mailto:caritavalo9@gmail.com">caritavalo9@gmail.com</a></p>
+
+      <h2>10. Core Statement</h2>
+      <p>By default, ColorMind performs test logic and result generation on the device. No test answers, images, or personal content are uploaded. If any future cloud feature becomes available, we will describe it in‑app, request consent, and update this policy before activation.</p>
+
+      <h3>Updates</h3>
+      <p>This policy may be updated to reflect changes in the app or regulations. Material changes will be highlighted in the release notes and on this page.</p>
+    </main>
+    <footer>
+      © 2025 ColorMind
+    </footer>
+  </body>
+  </html>
